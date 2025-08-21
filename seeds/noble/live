@@ -2,7 +2,7 @@ Task-Per-Derivative: 1
 Task-Section: user
 Task-Description: King OS live CD
 Task-Relevance: 2
-Task-Key: calamares-settings-mydistro
+Task-Key: calamares-settings-kingos
 Task-Seeds: live-common
 
 # Languages (trim as you like)
@@ -19,5 +19,15 @@ kde-config-fcitx5
 
 # Installer (Calamares)
 calamares
-calamares-settings-kingos
-kingos-installer-prompt
+
+# Core Calamares runtime / partition stack
+kpmcore
+partitionmanager
+parted
+os-prober
+btrfs-progs
+e2fsprogs
+xfsprogs
+lvm2
+cryptsetup
+squashfs-tools
