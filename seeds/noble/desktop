@@ -1,0 +1,63 @@
+Task-Per-Derivative: 1
+Task-Section: user
+Task-Description: My KDE Desktop
+Task-Seeds: desktop-common
+Task-Key: my-kde-desktop
+Task-Name: my-kde-desktop
+Task-Metapackage: my-kde-desktop
+
+# Display/Login manager
+sddm
+(kde-config-sddm)
+(sddm-theme-breeze)
+
+# KDE Plasma core
+plasma-desktop
+plasma-workspace
+systemsettings
+plasma-pa
+plasma-systemmonitor
+powerdevil
+kinfocenter
+kde-cli-tools
+kactivitymanagerd
+breeze
+oxygen-sounds
+xdg-desktop-portal-kde
+qttranslations5-l10n
+
+# Basic apps (match taste)
+konsole
+dolphin
+gwenview
+okular
+ark
+kate
+kcalc
+spectacle
+print-manager
+
+# Networking & stack
+network-manager
+plasma-nm
+avahi-daemon
+wpasupplicant
+ca-certificates
+libnss-mdns
+
+# Printing & scanning (optional but friendly defaults)
+cups
+cups-filters
+openprinting-ppds
+hplip
+
+# Plasma Discover (optional)
+plasma-discover
+plasma-discover-backend-snap
+plasma-discover-notifier
+
+# Firefox via snap + helpers (Ubuntu-style)
+snap:firefox
+snap:gnome-42-2204
+snap:gtk-common-themes
+snap:spotify
