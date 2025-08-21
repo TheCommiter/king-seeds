@@ -1,16 +1,20 @@
-# Networking/firmware helpers (pick what you want)
+# Firmware / networking
+linux-firmware
 b43-fwcutter
 bcmwl-kernel-source
 
-# NVIDIA meta (match noble’s HWE versions)
+# NVIDIA (HWE noble)
 (/^nvidia-driver-550$/)
 (/^linux-modules-nvidia-550-generic-hwe-24.04$/)
 nvidia-prime
+# (optional open variant)
+# nvidia-open-driver-550
 
-# Installer bootloaders (both BIOS & UEFI)
+# Bootloaders
 grub-efi-amd64-signed [amd64]
 shim-signed [amd64]
 grub-pc [amd64]
 
-# Blacklist duplicates
+# Avoid dupes
 !grub-efi-amd64
+
