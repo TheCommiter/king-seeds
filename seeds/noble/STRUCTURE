@@ -1,0 +1,7 @@
+include platform.noble
+desktop: desktop-common
+live: desktop live-common
+ship-live: boot live
+full: desktop
+# keep this last:
+supported: ship-live full supported-common
