@@ -54,6 +54,7 @@ hplip
 # Plasma Discover (optional)
 plasma-discover
 plasma-discover-backend-snap
+plasma-discover-backend-fwupd
 plasma-discover-notifier
 
 # Firefox via snap + helpers (Ubuntu-style)
@@ -61,3 +62,15 @@ snap:firefox
 snap:gnome-42-2204
 snap:gtk-common-themes
 snap:spotify
+
+# Portals & user folders
+xdg-desktop-portal
+xdg-user-dirs
+xdg-user-dirs-gtk
+
+# (Optional) Firmware & driver helpers
+fwupd
+ubuntu-drivers-common
+
+# (Optional) Font coverage
+fonts-noto
