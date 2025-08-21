@@ -5,13 +5,14 @@ Task-Relevance: 2
 Task-Key: calamares-settings-kingos
 Task-Seeds: live-common
 
-# Languages (trim as you like)
+# Languages
 * Languages: en
 language-pack-${Languages}
+language-pack-kde-${Languages}
 wamerican
 wbritish
 
-# Input methods (adjust for your audience)
+# Input methods (optional)
 fcitx5
 fcitx5-frontend-all
 fcitx5-table
@@ -19,13 +20,21 @@ kde-config-fcitx5
 
 # Installer (Calamares)
 calamares
+# calamares-settings-kingos   <-- keep ONLY if you have this package
+kingos-installer-prompt       <-- remove unless you actually ship this pkg
 
-# Core Calamares runtime / partition stack
+# Calamares deps / filesystems / boot helpers
 kpmcore
 partitionmanager
 parted
 os-prober
 btrfs-progs
+e2fsprogs
+xfsprogs
+lvm2
+cryptsetup
+squashfs-tools
+
 e2fsprogs
 xfsprogs
 lvm2
